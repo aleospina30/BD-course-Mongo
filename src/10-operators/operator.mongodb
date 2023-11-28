@@ -1,0 +1,21 @@
+use("platzi_store")
+
+// Using $gy (>) & $gte(>=)
+// db.inventory.find({ qty: { $gt: 20 } })
+// db.inventory.find({ qty: { $gte: 20 } })
+
+// Using $lt (<) & $lte (<=)
+// db.inventory.find({ qty: { $lt: 20 } })
+// db.inventory.find({ qty: { $lte: 20 } })
+
+// Join
+// db.inventory.find({ qty: { $gte: 25, $lte: 35 } })
+
+// Si es item code es = a 123 y qty es mayor e igual que 20 y es menor o igual que 25
+db.inventory.find({
+    "item.code": "123", 
+    qty: { $gte: 20, $lte: 25 } 
+})
+
+
+
