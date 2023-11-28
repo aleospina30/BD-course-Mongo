@@ -1,6 +1,6 @@
-use("platzi_store")
+use("platzi_store");
 
-db.categories.drop()
+db.categories.drop();
 
 db.categories.insertMany([
   { _id: 1, name: "category 1" },
@@ -13,6 +13,6 @@ db.categories.insertMany([
   { _id: 8, name: "category 8" },
   { _id: 9, name: "category 9" },
   { _id: 10, name: "category 10" },
-])
+]);
 
-db.categories.find()
+db.categories.find();

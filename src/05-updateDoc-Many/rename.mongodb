@@ -1,12 +1,12 @@
 use("sample_training")
 
 db.zips.updateMany(
-    //query
-    {city: "CLEVELAND"},
-    {
-        // update - operators
-        $rename: {
-            MyAttr: "MiDato"
-        }
-    }
-)
+  //query
+  { city: "CLEVELAND" },
+  {
+    // update - operators
+    $rename: {
+      MyAttr: "MiDato",
+    },
+  }
+);

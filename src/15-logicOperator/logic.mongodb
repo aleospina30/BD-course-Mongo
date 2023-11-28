@@ -1,4 +1,4 @@
-use("sample_training")
+use("sample_training");
 
 //and implict
 // db.inspections.find({
@@ -7,14 +7,13 @@ use("sample_training")
 // }).count()
 //and explict
 // db.inspections.find({
-//     $and: [{ 
+//     $and: [{
 //     sector: "Tax Preparers - 891",
 //     result: "Unable to Locate"
 // }]
 // }).count()
 
-
-// $or 
+// $or
 // db.inspections.find({
 //     $or: [
 //     {sector: "Tax Preparers - 891"},
@@ -43,6 +42,5 @@ use("sample_training")
 
 // $not
 db.inspections.find({
-    reuslt: { $not: {$regex: /Unable to Locate/} }
-})
-
+  reuslt: { $not: { $regex: /Unable to Locate/ } },
+});

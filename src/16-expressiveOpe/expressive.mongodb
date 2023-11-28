@@ -1,9 +1,9 @@
-use("platzi_store")
+use("platzi_store");
 
 // db.monthlyBudget.find({ spent: {$gte: 100} })
 
 db.monthlyBudget.find({
-    $expr: {
-        $gte: ["$spent", "$budget"]
-    }
-})
+  $expr: {
+    $gte: ["$spent", "$budget"],
+  },
+});

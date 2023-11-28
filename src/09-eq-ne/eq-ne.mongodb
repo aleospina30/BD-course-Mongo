@@ -1,4 +1,4 @@
-use("platzi_store")
+use("platzi_store");
 
 // Using $eq
 // De manera implicita
@@ -10,4 +10,4 @@ use("platzi_store")
 // db.inventory.find({ "item.code": {$eq: "123"} })
 
 //Using $ne
-db.inventory.find({ qty: { $ne: 20 } })
+db.inventory.find({ qty: { $ne: 20 } });

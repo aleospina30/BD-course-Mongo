@@ -1,12 +1,12 @@
-use("sample_training")
+use("sample_training");
 
 db.zips.updateMany(
-    //query
-    {city: "CLEVELAND"},
-    {
-        // update - operators
-        $unset: {
-            MiDato: ""
-        }
-    }
-)
+  //query
+  { city: "CLEVELAND" },
+  {
+    // update - operators
+    $unset: {
+      MiDato: "",
+    },
+  }
+);

@@ -1,4 +1,4 @@
-use("platzi_store")
+use("platzi_store");
 
 // Using $gy (>) & $gte(>=)
 // db.inventory.find({ qty: { $gt: 20 } })
@@ -13,9 +13,6 @@ use("platzi_store")
 
 // Si es item code es = a 123 y qty es mayor e igual que 20 y es menor o igual que 25
 db.inventory.find({
-    "item.code": "123", 
-    qty: { $gte: 20, $lte: 25 } 
-})
-
-
-
+  "item.code": "123",
+  qty: { $gte: 20, $lte: 25 },
+});

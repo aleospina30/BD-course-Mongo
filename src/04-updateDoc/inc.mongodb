@@ -1,12 +1,12 @@
-use("platzi_store")
+use("platzi_store");
 
 db.products.updateOne(
-    //Query
-    {_id: 2},
-    // change => operators
-    {
-     $inc: {
-        price: 100
-     }    
-    }
-)
+  //Query
+  { _id: 2 },
+  // change => operators
+  {
+    $inc: {
+      price: 100,
+    },
+  }
+);

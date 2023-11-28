@@ -1,6 +1,6 @@
-use("platzi_store")
+use("platzi_store");
 
-db.products.drop()
+db.products.drop();
 
 db.products.insertMany([
   { _id: 1, name: "Producto 1", price: 100 },
@@ -9,6 +9,6 @@ db.products.insertMany([
   { _id: 4, name: "Producto 4", price: 400 },
   { _id: 5, name: "Producto 5", price: 500 },
   { _id: 6, name: "Producto 6", price: 600 },
-])
+]);
 
-db.products.find()
+db.products.find();

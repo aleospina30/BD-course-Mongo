@@ -1,16 +1,13 @@
-use("sample_training")
+use("sample_training");
 
 // db.routes.find({ airplane: "E70"})
 
 // $and
-db.routes.find({ 
-    $and: [
-        {airplane: "E70"},
-        {
-          $or: [
-            { dst_airport: "BOG" },
-            { src_airport: "BOG" }
-          ]
-        },
-    ]
- })
+db.routes.find({
+  $and: [
+    { airplane: "E70" },
+    {
+      $or: [{ dst_airport: "BOG" }, { src_airport: "BOG" }],
+    },
+  ],
+});

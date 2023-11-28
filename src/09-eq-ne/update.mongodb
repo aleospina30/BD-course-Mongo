@@ -1,11 +1,11 @@
-use("platzi_store")
+use("platzi_store");
 
 // Lo que sea diferente a 20 se incremente 10
 db.inventory.updateMany(
-    { qty: { $ne: 20 } },
-    {
-        $inc: {
-            qty: 10
-        }
-    }
-)
+  { qty: { $ne: 20 } },
+  {
+    $inc: {
+      qty: 10,
+    },
+  }
+);

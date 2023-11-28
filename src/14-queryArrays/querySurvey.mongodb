@@ -1,3 +1,3 @@
-use("platzi_store")
+use("platzi_store");
 
-db.survey.find()
+db.survey.find();
