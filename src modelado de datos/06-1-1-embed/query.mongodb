@@ -1,0 +1,5 @@
+use("platzi_store")
+
+db.Users.find({
+    "addres.city": "Medellin"
+})

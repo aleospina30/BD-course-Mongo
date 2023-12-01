@@ -1,0 +1,18 @@
+use("platzi_store")
+
+db.Users.insertOne({
+    email: 'sejotaz@gmail.com',
+    password: 'Asa12345',
+    role: 'costumer',
+    social_accounts: ['twitter', 'facebook'],
+    addres: {
+        street: 'cr 78',
+        city: 'Cali',
+        zip: 123
+    },
+    shipping_addres: {
+        street: 'cr 87',
+        city: 'Cali',
+        zip: 698
+    }
+})
