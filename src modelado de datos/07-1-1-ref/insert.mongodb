@@ -1,0 +1,16 @@
+use("platzi_store")
+
+db.stores.insertOne({
+    storeId: 'ST001',
+    name: 'Alejo Store',
+    addres: 'Calle 1',
+})
+
+db.stores_details.insertOne({
+    storeId: 'ST001',
+    descripton: 'text text text',
+    manager: {
+        email: 'alejo@gmail.com',
+        cell: 3216549877
+    }
+})
