@@ -1,0 +1,40 @@
+use("platzi_store")
+
+db.orders.find({ user_Id: ObjectId('656df09e726cb47a533163b6') })
+db.Users.findOne({_id: ObjectId('656df09e726cb47a533163b6')})
+
+
+db.orders.aggregate([
+    {
+        $match: {
+            _id:  ObjectId('656df09e726cb47a533163b6')
+        }
+    },
+    {
+        $lookup: {
+          from: "Users",
+          localField: "user_Id",
+          foreignField: '_id',
+          as: 'user'
+        }
+    }
+])
+
+
+
+
+db.Users.aggregate([
+    {
+        $match: {
+            _id:  ObjectId('656905d0d60418f122fe73d3')
+        }
+    },
+    {
+        $lookup: {
+          from: "orders",
+          localField: "_id",
+          foreignField: 'user_Id',
+          as: 'buys'
+        }
+    }
+])
